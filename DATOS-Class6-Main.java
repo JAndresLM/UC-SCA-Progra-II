@@ -33,6 +33,10 @@ public class DATOS_Class6 {
         myList.addElementInFirstPosition("Yaneiry");
         System.out.println("The List has:"+myList.getSize()+" Elements");
         
+        myList.printAllElements();
+        Node expectedNode = myList.getElementInPosition(5);
+        System.out.println("Expected:"+expectedNode.getElement().toString());
+        
     }
     
 }

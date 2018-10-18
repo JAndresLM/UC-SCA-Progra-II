@@ -33,5 +33,35 @@ public class ElementsList {
         size++;
     }
     
+    public void printAllElements(){
+        Node currentNode = this.head;
+        /*for(int index=0;index<this.size;index++){
+            System.out.println(index+")"+currentNode.getElement().toString());
+            currentNode = currentNode.getNext();
+        }*/
+        
+        int counter = 0;
+        /*do{
+            System.out.println(counter+")"+currentNode.getElement().toString());
+            currentNode = currentNode.getNext();
+            counter++;
+        }while(currentNode!=null);*/
+        
+        
+        while (currentNode!=null){
+            System.out.println(counter+")"+currentNode.getElement().toString());
+            currentNode = currentNode.getNext();
+            counter++;
+        }
+    }
+    
+    public Node getElementInPosition(int position){
+        Node currentNode = this.head;
+        for(int index=0;index<position;index++){
+            currentNode = currentNode.getNext();
+        }
+        return currentNode;
+    }
+    
    
 }
